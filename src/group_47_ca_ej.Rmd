@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(janitor)
 library(here)
+library(hexbin)
 ```
 
 ```{r}
@@ -19,4 +20,12 @@ library(here)
 ces <- read_csv(here("data", "ces3demographics.csv")) %>%
   clean_names()
 ```
+
+```{r}
+#Generate plot of percent white vs. ces 3.0 score for each county
+ggplot(data = ces, aes(x= white_percent, y= ces_3_0_score)) +
+  geom_point()
+
+```
+
 
