@@ -1,0 +1,11 @@
+---
+title: "Group 47 CA pollution burden"
+author: "Grace Kumaishi and Tom Wheeler"
+date: "11/23/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
