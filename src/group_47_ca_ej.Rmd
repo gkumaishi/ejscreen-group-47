@@ -25,6 +25,8 @@ ces <- read_csv(here("data", "ces3demographics.csv")) %>%
 #Generate plot of percent white vs. ces 3.0 score for each county
 ggplot(data = ces, aes(x= white_percent, y= ces_3_0_score)) +
   geom_hex() +
+  scale_fill_gradient(low = "darkorchid4", high = "magenta") +
+  theme_minimal() +
   labs(x = "Percent white", y = "CES 3.0 score")
 
 ```
