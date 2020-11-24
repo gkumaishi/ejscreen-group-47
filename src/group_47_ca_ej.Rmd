@@ -30,5 +30,5 @@ ggplot(data = ces, aes(x= white_percent, y= ces_3_0_score)) +
   labs(x = "Percent white", y = "CES 3.0 score", title = "Percent of population that is white and corresponding CalEnviroScreen 3.0 score")
 
 ```
-
+Description: There appears to be a moderately strong negative correlation between CES 3.0 score and percent of population that this white. As the percentage of the population that is white increases, the CES 3.0 score decreases.
 
